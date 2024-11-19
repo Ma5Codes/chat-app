@@ -1,17 +1,17 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const conversationSchema = new mongoose.Schema(
   {
     participants: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
+        ref: 'User', // Reference to the User model
       },
     ],
-    messages: [ // Updated to "messages" for consistency
+    messages: [ // Updated to match the field name
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Message",
+        ref: 'Message', // Reference to the Message model
         default: [],
       },
     ],
@@ -19,6 +19,6 @@ const conversationSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Conversation = mongoose.model("Conversation", conversationSchema);
+const Conversation = mongoose.model('Conversation', conversationSchema);
 
 export default Conversation;

@@ -3,8 +3,12 @@ dotenv.config(); // Load environment variables first
 
 import cookieParser from 'cookie-parser';
 import express from 'express';
+
 import authRoutes from './routes/auth.routes.js';
 import messageRoutes from './routes/message.routes.js';
+import userRoutes from './routes/user.routes.js';
+
+
 import connectToMongoDB from './db/connectToMongoDB.js';
 
 const app = express();
@@ -17,6 +21,7 @@ app.use(cookieParser());
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);
+app.use('/api/users', userRoutes);
 
 // Start the server and connect to MongoDB
 app.listen(PORT, () => {
