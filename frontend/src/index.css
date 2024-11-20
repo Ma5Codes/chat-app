@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +10,6 @@ body {
     background-position: center;
 
 }
-=======
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -80,4 +78,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
->>>>>>> e2ac6dc (Add project code)
