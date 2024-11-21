@@ -1,4 +1,4 @@
-import SignUp from './pages/signup/SignUp.jsx'
+import Home from './pages/home/Home'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="p-4 h-screen flex items-center justify-center"> 
-     <SignUp />
+     <Home />
     </div>
   )
 }
