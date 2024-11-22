@@ -14,7 +14,4 @@ export const getUsersForSidebar = async (req, res) => {
 };
 
 
-<<<<<<< HEAD
  
-=======
->>>>>>> e2ac6dc (Add project code)
